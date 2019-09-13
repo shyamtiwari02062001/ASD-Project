@@ -23,9 +23,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static('./public'));
 
 //file handeling
-app.get('/',function(req,res){
-  res.render("project");
- });
+
 app.get('/project',function(req,res){
     res.render("project");
    });
